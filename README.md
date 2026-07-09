@@ -25,6 +25,24 @@
     + [x] make routes
     + [ ] Pretty
     + [ ] Theme
+        * Golden Glow
+            - 7c6a0a
+            - babd8d
+            - ffdac6
+            - fa9500
+            - eb6424
+        * Spring Garden
+            - 8cb369
+            - f4e285
+            - f4a259
+            - 5b8e7d
+            - bc4b51
+        * Dark Sunset
+            - 335c67
+            - fff3b0
+            - e09f3e
+            - 9e2a2b
+            - 540b0e
 - [ ] Home
     + [ ] When
     + [ ] Where
@@ -33,6 +51,11 @@
 - [ ] RSVP
     + [ ] Get group
     + [ ] Flow
+        * [ ] Search for party by names of guests
+        * [ ] Select party
+        * [ ] edit party
+        * [ ] save or finalize
+        * [ ]
 - [ ] Registry
     + [ ] Zola?
     + [ ] Embedded link to aggregator

@@ -4,8 +4,12 @@
 
 <p>rsvp works!</p>
 
-{#each data.parties as party}
-	<p>{party.name} -- {party.is_rsvp}</p>
-{:else}
-	<p>No parties :(</p>
-{/each}
+<ul>
+	{#each data.parties as party}
+		<a href="/rsvp/{party.id}">
+			<p>{party.name} -- {party.is_rsvp}</p>
+		</a>
+	{:else}
+		<li><p>No parties :(</p></li>
+	{/each}
+</ul>
