@@ -1,67 +1,71 @@
 <script lang="ts">
 	import { enhance } from '$app/forms';
-	import { invalidateAll } from '$app/navigation';
+	import { untrack } from 'svelte';
 
 	let { data, form } = $props();
 
-	let party = $state(structuredClone(data.party));
-	let guests = $state(structuredClone(data.guests));
+	let party = $state(untrack(() => data.party));
+	let guests = $state(untrack(() => data.guests));
 	let notes = $state('');
-
-	let serdes = $derived(JSON.stringify({ p: party, g: guests, n: notes }));
-
-	$effect(() => {
-		party = structuredClone(data.party);
-		guests = structuredClone(data.guests);
-	});
-
-	$inspect(party);
-	$inspect(guests);
 </script>
 
-<p>{form}</p>
+<p>{JSON.stringify(form)}</p>
 
 <h2>Party: {party.name} ({party.id})</h2>
 
 <form method="POST" use:enhance>
 	<div>
 		<label>
-			Finalize:
-			<input type="checkbox" value={party.is_rsvp != 0} onchange={() => (party.is_rsvp ^= 1)} />
+			Finalize {party.finalized}:
+			<input type="hidden" name="party_id" value={party.id} />
+			<input
+				type="checkbox"
+				name="finalize"
+				value={party.finalized}
+				checked={party.finalized != 0}
+				onchange={() => (party.finalized ^= 1)}
+			/>
 		</label>
 	</div>
 
 	<div>
 		<h3>Guests</h3>
-		{#each guests as guest}
-			<ul>
+		<ul>
+			{#each guests as guest}
 				<li>
 					<label>
 						{guest.name}:
 						<input
+							name="attending"
 							type="checkbox"
-							value={guest.is_rsvp != 0}
+							value={guest.id}
+							checked={guest.is_rsvp != 0}
 							onchange={() => (guest.is_rsvp ^= 1)}
 						/>
 					</label>
 				</li>
-			</ul>
-		{:else}
-			<p>No guests :(</p>
-		{/each}
+			{:else}
+				<p>No guests :(</p>
+			{/each}
+		</ul>
 	</div>
 
 	<div>
 		<h3>Notes:</h3>
 
 		<!-- TODO(ajone239): hook up -->
-		<textarea bind:value={notes}></textarea>
+		<textarea name="notes" bind:value={party.notes}></textarea>
 	</div>
-
-	<input type="hidden" value={serdes} name="data" />
 
 	<div>
 		<button type="submit"> Submit </button>
-		<button onclick={() => invalidateAll()}> Clear </button>
+		<button
+			onclick={() => {
+				party = structuredClone(data.party);
+				guests = structuredClone(data.guests);
+			}}
+		>
+			Clear
+		</button>
 	</div>
 </form>
