@@ -6,7 +6,6 @@
 
 	let party = $state(untrack(() => data.party));
 	let guests = $state(untrack(() => data.guests));
-	let notes = $state('');
 </script>
 
 <p>{JSON.stringify(form)}</p>
