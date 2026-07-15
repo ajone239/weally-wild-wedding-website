@@ -15,11 +15,11 @@
     <div>
         <label>
             First:
-            <input required name="firstName" />
+            <input type="text" required name="firstName" />
         </label>
         <label>
             Last:
-            <input required name="lastName" />
+            <input type="text" required name="lastName" />
         </label>
     </div>
     <button type="submit">Submit</button>
