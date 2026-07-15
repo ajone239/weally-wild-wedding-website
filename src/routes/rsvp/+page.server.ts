@@ -27,6 +27,7 @@ export const actions: Actions = {
                 id: party.id,
                 name: party.name,
                 score: score_query,
+                guestNames: sql<string>`group_concat(${guest.name}, ', ')`.as(`guest_names`)
             })
             .from(party)
             .innerJoin(guest, eq(party.id, guest.party_id))
