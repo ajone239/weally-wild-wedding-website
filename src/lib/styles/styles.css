@@ -246,7 +246,9 @@ input[type='checkbox'] {
     position: relative;
     flex-shrink: 0;
     vertical-align: middle;
-    transition: border-color 0.15s, background 0.15s;
+    transition:
+        border-color 0.15s,
+        background 0.15s;
 
     &:checked {
         background: var(--link-color);
