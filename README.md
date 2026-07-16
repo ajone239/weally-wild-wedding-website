@@ -35,8 +35,8 @@
     - [ ] Who
     - [ ] Schedule
 - [x] RSVP
-    - [ ] Search for party by guest name
-    - [ ] Select party
+    - [x] Search for party by guest name
+    - [x] Select party
     - [x] Edit party (attendance, notes)
     - [x] Save or finalize
     - [ ] Good-faith protection (cookie TBD)
@@ -44,8 +44,9 @@
     - [ ] Zola?
     - [ ] Embedded link to aggregator
 - [ ] FAQ
-    - [ ] Attire
-    - [ ] Plus Ones <- invites will list all invitees
+    - [x] RSVP
+    - [x] Attire
+    - [x] Plus Ones <- invites will list all invitees
     - [ ] Alcohol
     - [ ] Photos
 - [ ] About
