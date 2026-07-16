@@ -87,7 +87,6 @@
     }
 
     h2 {
-        font-family: 'Sacramento', sans-serif;
         margin: 10px;
     }
 

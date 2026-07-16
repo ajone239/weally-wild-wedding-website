@@ -4,6 +4,8 @@
     import type { LayoutProps } from './$types';
     import MobileHeader from '$lib/components/MobileHeader.svelte';
     import DesktopHeader from '$lib/components/DesktopHeader.svelte';
+    import { dev } from '$app/env';
+    import type { MenuLink } from '$lib/types/MenuLink';
 
     let { children }: LayoutProps = $props();
 
@@ -11,8 +13,9 @@
         { title: 'RSVP', url: '/rsvp' },
         { title: 'FAQ', url: '/faq' },
         { title: 'About', url: '/about' },
-        { title: 'Registry', url: '/registry' }
-    ];
+        { title: 'Registry', url: '/registry' },
+        dev && { title: 'Demo', url: '/demo' }
+    ].filter((m) => m) as MenuLink[];
 </script>
 
 <div class="site-wrapper">
