@@ -6,9 +6,9 @@
 </script>
 
 <div class="header-container">
-    <h3>
+    <h2>
         <a href="/">{SiteTitle}</a>
-    </h3>
+    </h2>
 
     <div class="menu-container">
         <nav>
@@ -50,7 +50,8 @@
         padding: 5px;
     }
 
-    h3 {
+    h2 {
+        font-family: 'Sacramento', sans-serif;
         margin: 10px;
     }
 

@@ -11,9 +11,9 @@
 
 <div class="header-container">
     <div class="header-content">
-        <h3>
+        <h2>
             <a href="/" onclick={() => (open = false)}>{SiteTitle}</a>
-        </h3>
+        </h2>
 
         <div class="toggle-container">
             <button class="nav-toggle" onclick={() => (open = !open)}>
@@ -86,7 +86,8 @@
         }
     }
 
-    h3 {
+    h2 {
+        font-family: 'Sacramento', sans-serif;
         margin: 10px;
     }
 
