@@ -1,7 +1,11 @@
 <script>
     import stare from '$lib/assets/cute_stare.jpg';
+    import unionPickup from '$lib/assets/union_pickup.jpg';
+    import Seo from '$lib/components/Seo.svelte';
     let { data } = $props();
 </script>
+
+<Seo image={unionPickup} />
 
 <div class="hero">
     <img src={stare} alt="The groom and bride sharing a loving look." />

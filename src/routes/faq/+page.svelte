@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo title="FAQ" description="Answers to common questions about RSVPing, attire, and plus ones." />
+
 <h1>Frequently Asked Questions:</h1>
 
 <h2>How to RSVP</h2>

@@ -3,7 +3,14 @@
     import tofu from '$lib/assets/tofu.jpeg';
     import engaged from '$lib/assets/engaged.jpg';
     import book_store from '$lib/assets/book_store.jpg';
+    import Seo from '$lib/components/Seo.svelte';
 </script>
+
+<Seo
+    title="About Us"
+    description="A few things you might not know about Austin and Mariah."
+    image={engaged}
+/>
 
 <h1>About Us</h1>
 

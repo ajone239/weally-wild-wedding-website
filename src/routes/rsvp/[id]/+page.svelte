@@ -3,6 +3,7 @@
 
     import { enhance } from '$app/forms';
     import { untrack } from 'svelte';
+    import Seo from '$lib/components/Seo.svelte';
 
     let { data, form } = $props();
 
@@ -14,6 +15,8 @@
         guests = structuredClone(data.guests);
     };
 </script>
+
+<Seo title="RSVP" description="RSVP for Austin and Mariah's wedding." noindex />
 
 <h2>Party: {party.name}</h2>
 

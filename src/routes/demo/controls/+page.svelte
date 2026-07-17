@@ -1,3 +1,9 @@
+<script lang="ts">
+    import Seo from '$lib/components/Seo.svelte';
+</script>
+
+<Seo title="Demo Controls" noindex />
+
 <h2>Controls</h2>
 
 <section>

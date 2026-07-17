@@ -1,6 +1,9 @@
 <script lang="ts">
     import hotel from '$lib/assets/kitty_hotel.jpeg';
+    import Seo from '$lib/components/Seo.svelte';
 </script>
+
+<Seo title="Registry" description="Registry details for Austin and Mariah's wedding." />
 
 <h1>Registry</h1>
 

@@ -1,7 +1,10 @@
 <script lang="ts">
     import { enhance } from '$app/forms';
+    import Seo from '$lib/components/Seo.svelte';
     let { form } = $props();
 </script>
+
+<Seo title="RSVP" description="RSVP for Austin and Mariah's wedding." />
 
 {#if form?.success}
     <p>Successfully submitted</p>
