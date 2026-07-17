@@ -6,7 +6,6 @@ import { like, sql, eq } from 'drizzle-orm';
 export const actions: Actions = {
     default: async ({ request }) => {
         const data = await request.formData();
-        console.log(data);
 
         const first = data.get('firstName')?.toString() ?? '';
         const last = data.get('lastName')?.toString() ?? '';
@@ -39,8 +38,6 @@ export const actions: Actions = {
         if (parties.length == 0) {
             fail(404, { message: 'No party was found with the first and last name provided.' });
         }
-
-        console.log(parties);
 
         return {
             success: true,

@@ -1,4 +1,6 @@
 <script lang="ts">
+    import crossing from '$lib/assets/crossing.jpg';
+
     import { enhance } from '$app/forms';
     import { untrack } from 'svelte';
 
@@ -23,9 +25,7 @@
 
 {#if data.party.finalized}
     <div>
-        <p>You have finalized your RSVP. Thank you!</p>
-
-        <h3>Guests</h3>
+        <h3>Guests Attending</h3>
 
         <ul>
             {#each guests as guest (guest.id)}
@@ -45,6 +45,12 @@
         <h3>Notes:</h3>
 
         <textarea disabled={true} bind:value={party.notes}></textarea>
+    </div>
+
+    <div>
+        <h2>You have finalized your RSVP. Thank you!</h2>
+
+        <img src={crossing} alt="Mariah and Austin taking a step together." />
     </div>
 {:else}
     <form
@@ -109,3 +115,12 @@
         </div>
     </form>
 {/if}
+
+<style>
+    img {
+        width: 80%;
+        object-position: center 60%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+    }
+</style>
