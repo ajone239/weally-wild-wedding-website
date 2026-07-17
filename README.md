@@ -9,6 +9,7 @@
 - `bun run check`: check
 - `bun run lint`: lint check
 - `bun run format`: apply lints
+- `bun run db:seed`: seed
 - `bun run db:push`: gen and run migrations
 - `bun run db:generate`: gen migration
 - `bun run db:migrate`: run migration
