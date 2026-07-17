@@ -11,7 +11,13 @@ export default defineConfig({
                     filename.split(/[/\\]/).includes('node_modules') ? undefined : true
             },
             adapter: adapter({
-                runtime: 'nodejs24.x'
+                runtime: 'nodejs24.x',
+                images: {
+                    sizes: [640, 828, 1200, 1920, 3840],
+                    formats: ['image/avif', 'image/webp'],
+                    minimumCacheTTL: 300,
+                    domains: ['example-app.vercel.app'],
+                }
             }),
             preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
             extensions: ['.svelte', '.svx', '.md'],
