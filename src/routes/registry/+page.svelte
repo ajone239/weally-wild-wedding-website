@@ -1,5 +1,13 @@
 <script lang="ts">
     import Seo from '$lib/components/Seo.svelte';
+    import { onDestroy } from 'svelte';
+    let embedContainer: HTMLDivElement;
+
+    onDestroy(() => {
+        if (embedContainer) {
+            embedContainer.innerHTML = '';
+        }
+    });
 </script>
 
 <svelte:head>
@@ -10,8 +18,10 @@
 
 <h1>Registry</h1>
 
-<a
-    class="zola-registry-embed"
-    href="https://www.zola.com/registry/"
-    data-registry-key="austinandmariahnovember14">Our Zola Wedding Registry</a
->
+<div bind:this={embedContainer}>
+    <a
+        class="zola-registry-embed"
+        href="https://www.zola.com/registry/"
+        data-registry-key="austinandmariahnovember14">Our Zola Wedding Registry</a
+    >
+</div>
