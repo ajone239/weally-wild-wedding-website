@@ -38,10 +38,10 @@
 
 <h2>How we met again</h2>
 
-It wasn't until high school that we met again. We had senior english class together. We became
+It wasn't until high school that we met again. We had senior English class together. We became
 friends over the course of sitting and being on projects together. Long before we dated or liked
 each other, we were already great friends. This friendship has persisted and grown in the
-intervening years. Right after we graduated high school, Mariah asked Austin to be here boyfriend.
+intervening years. Right after we graduated high school, Mariah asked Austin to be her boyfriend.
 That was on May 27, 2017.
 
 <h2>Our little life up to now</h2>
@@ -76,8 +76,8 @@ spoil them. Both of these little girls certainly do alot to make our house into 
 
 <p>
     Community and books are mutually important to us. So, we started a book club back in 2023! We've
-    be reading, meeting, and chatting ever since. Book club is an important part of our little life
-    that we have, and we are grateful for everyone in it.
+    been reading, meeting, and chatting ever since. Book club is an important part of our little
+    life that we have, and we are grateful for everyone in it.
 </p>
 
 <h2>How Austin Proposed</h2>

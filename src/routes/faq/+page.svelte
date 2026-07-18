@@ -11,7 +11,7 @@
 <p>
     Please go to the
     <a href="/rsvp"> RSVP page </a>
-    to search for your party and let us know who can make it!.
+    to search for your party and let us know who can make it!
 </p>
 
 <h2>Plus Ones</h2>

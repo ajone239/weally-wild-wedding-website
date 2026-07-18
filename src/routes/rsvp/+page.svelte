@@ -38,7 +38,7 @@
                     Party: {partay.name}
 
                     {#if partay.finalized}
-                        <span class="deco">[RSPD'd!]</span>
+                        <span class="deco">[RSVP'd!]</span>
                     {/if}
                     <span class="click"></span>
                 </a>

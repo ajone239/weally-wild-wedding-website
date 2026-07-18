@@ -95,7 +95,7 @@
         <div>
             <h3>Notes:</h3>
 
-            <p>Please add any information the wedding planner should now about your party.</p>
+            <p>Please add any information the wedding planner should know about your party.</p>
 
             <textarea name="notes" bind:value={party.notes}></textarea>
         </div>
