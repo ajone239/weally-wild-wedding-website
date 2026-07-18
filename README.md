@@ -41,9 +41,9 @@
     - [x] Edit party (attendance, notes)
     - [x] Save or finalize
     - [ ] Good-faith protection (cookie TBD)
-- [ ] Registry
-    - [ ] Zola?
-    - [ ] Embedded link to aggregator
+- [x] Registry
+    - [x] Zola?
+    - [x] Embedded link to aggregator
 - [ ] FAQ
     - [x] RSVP
     - [x] Attire
