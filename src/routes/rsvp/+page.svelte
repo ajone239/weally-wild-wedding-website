@@ -50,6 +50,9 @@
             </p>
         </div>
     {/each}
+{:else if form?.message}
+    <h2>Error finding your Party:</h2>
+    <p>{form.message}</p>
 {/if}
 
 <style>

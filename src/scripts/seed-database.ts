@@ -47,6 +47,7 @@ for (const p of people) {
 
 for (const p in groups) {
     const gs = groups[p];
+
     const par = await db.insert(schema.party).values({ name: p }).returning();
 
     const pid = par[0].id;

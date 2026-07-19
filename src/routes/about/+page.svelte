@@ -16,9 +16,8 @@
 
 <div class="book-store">
     <p>
-        Hey! We are Austin Jones and Mariah Haley. Chances are that if you are attending our
-        wedding, you likely know us quite well already. That said, the following are some things you
-        might not know yet.
+        Hey! We are Austin Jones and Mariah Haley. We are so happy to be celebrating our coming
+        together. Here is some stuff about the bride and groom you may like to know.
     </p>
     <img src={book_store} alt="The bride and groom outside a store of books." />
 </div>
@@ -41,8 +40,7 @@
 It wasn't until high school that we met again. We had senior English class together. We became
 friends over the course of sitting and being on projects together. Long before we dated or liked
 each other, we were already great friends. This friendship has persisted and grown in the
-intervening years. Right after we graduated high school, Mariah asked Austin to be her boyfriend.
-That was on May 27, 2017.
+intervening years. After high school graduation, Mariah and Austin started dating in 2017.
 
 <h2>Our little life up to now</h2>
 
@@ -89,8 +87,8 @@ spoil them. Both of these little girls certainly do alot to make our house into 
 
 <p>
     Probably 3 days before I asked, I started asking her for tips on my single leg takedown. For
-    what it's worth Mariah has been doing jiu jitsu for three years and I've been doing it for three
-    weeks. If you don't know, a single leg involves:
+    what it's worth Mariah has been doing Brazillian jiu jitsu for three years and I've been doing
+    it for three weeks. If you don't know, a single leg involves:
 </p>
 
 <ul>

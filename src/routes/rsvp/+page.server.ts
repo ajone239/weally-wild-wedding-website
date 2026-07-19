@@ -36,7 +36,9 @@ export const actions: Actions = {
             .orderBy(sql`score desc`);
 
         if (parties.length == 0) {
-            fail(404, { message: 'No party was found with the first and last name provided.' });
+            return fail(404, {
+                message: 'No party was found with the first and last name provided.'
+            });
         }
 
         return {

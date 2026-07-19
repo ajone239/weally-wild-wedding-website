@@ -39,7 +39,7 @@ async function seedParty(
     overrides: Partial<{ finalized: number; notes: string }> = {}
 ) {
     const partyId = crypto.randomUUID();
-    await db.insert(party).values({ id: partyId, name: 'Test Party', ...overrides });
+    await db.insert(party).values({ id: partyId, name: `Test Party ${partyId}`, ...overrides });
     return partyId;
 }
 

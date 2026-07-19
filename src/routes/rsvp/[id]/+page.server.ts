@@ -13,7 +13,7 @@ export const load: PageServerLoad = async ({ params }) => {
     });
 
     if (!the_party) {
-        error(404, 'party not found');
+        return error(404, 'party not found');
     }
 
     const guests: Guest[] = await db.query.guest.findMany({
@@ -38,7 +38,7 @@ export const actions: Actions = {
         });
 
         if (!the_party) {
-            error(404, { message: `Party ${party_name} [${party_id}] not found.` });
+            return error(404, { message: `Party ${party_name} [${party_id}] not found.` });
         }
 
         if (the_party.finalized) {

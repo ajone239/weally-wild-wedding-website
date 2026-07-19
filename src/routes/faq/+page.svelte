@@ -23,12 +23,11 @@
 
 <h2>When do I show up?</h2>
 
-<p>🚧 Under construction: Come back later for more info. 🚧</p>
+<p>
+    Our ceremony will start at 3:00 p.m. EST on Nov. 14, 2027. We ask that guests get to the venue
+    30 minutes early to ease of seating.
+</p>
 
 <h2>Attire</h2>
-
-<p>🚧 Under construction: Come back later for more info. 🚧</p>
-
-<h2>Photos</h2>
 
 <p>🚧 Under construction: Come back later for more info. 🚧</p>
