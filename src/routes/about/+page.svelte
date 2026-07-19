@@ -81,14 +81,17 @@ spoil them. Both of these little girls certainly do alot to make our house into 
 <h2>How Austin Proposed</h2>
 
 <p>
-    As you well know, Mariah can read my mind, so it was important to me to surprise her. Which was
-    made all the more difficult by the fact that she helped me pick out the ring.
+    A cornerstone of our relationship: Mariah can read Austin's mind. Any trick or joke that Austin
+    is pulling, Mariah can read it scrawled on his forehead. This is good for keeping Austin honest,
+    but it is troublesome when he wants to--say--surpise her with a proposal. This was made all the
+    more difficult by the fact that she helped pick out the ring.
 </p>
 
 <p>
-    Probably 3 days before I asked, I started asking her for tips on my single leg takedown. For
-    what it's worth Mariah has been doing Brazillian jiu jitsu for three years and I've been doing
-    it for three weeks. If you don't know, a single leg involves:
+    As such, Austin had to come up with a plan. 3 days before he asked, he started asking her for
+    tips on his single leg takedown. For what it's worth, Mariah had been doing Brazillian jiu jitsu
+    for three years. Austin had been doing it for three weeks. If you don't know, a single leg
+    involves:
 </p>
 
 <ul>
@@ -99,44 +102,47 @@ spoil them. Both of these little girls certainly do alot to make our house into 
 </ul>
 
 <p>
-    For my purposes, I needed to smoothly do the first two bullets. Essentially me getting down on
-    one knee in front of her standing. Thankfully, I suck at doing these. So, Mariah was anything
-    but suspicious when I was asking for tips about single leg takedown technique.
+    For our purposes, we needed to smoothly do the first two bullets. Essentially Austin needed
+    pretense to get down on one knee in front of her standing. Conveniently, Austin's single leg
+    takedowns did (and still do) suck. So, Mariah was anything but suspicious when he was asking for
+    tips about takedown technique.
 </p>
 
 <p>
-    Montage me making this more of a thing. Over a few days, I kept asking her for tips for single
-    legs, shoots, etc.; basically how I could more smoothly kneel to propose.
+    Montage Austin making this more of a thing. Over a few days, he kept asking her for tips for
+    single legs, shoots, etc.; basically how Austin could more smoothly kneel to propose.
 </p>
 
 <p>
-    This morning, in that liminal space between getting ready and leaving, I surreptitiously sat at
-    my nightstand and pocketed the ring box. My heart rate rising, I started practicing my single
-    legs by myself in the living room.
+    The morning of, in that liminal space between getting ready and leaving, Austin surreptitiously
+    sat at his nightstand and pocketed the ring box. Heart rate rising, Austin was practicing his
+    single legs by himself in the living room.
 </p>
 
 <p>
-    I was nervously palming the ring box in and out of my hand. I was making sure that the clam
-    shell opened out. I was repositioning it so I could easily grab it. All while acting like I was
-    taking down some invisible opponent.
+    He did all he could to get ready for the moment. He was nervously palming the ring box in and
+    out of his hand. He was making sure that the clam shell opened out. He was repositioning it so
+    he could easily grab it. All while, he was acting like he was taking down some invisible
+    opponent.
 </p>
 
 <p>
-    Then Mariah comes into the room seeing me practicing my shoots. I all but blurt, "so when I do
-    my step in, how do I pull the other one through to be strong?" She helped me with patience. I
-    gave it two practice reps of her giving me single leg tips.
+    Then Mariah came into the room and saw him practicing his shoots. Austin all but blurted, "so
+    when I do my step in, how do I pull the other one through to be strong?" She helped him with as
+    much patience as a breakfast-less-Mariah could muster. Austin did two practice reps of her
+    giving him single leg tips to really make it seem like this was about BJJ.
 </p>
 
-<p>Then smoothly, I said "you mean like this" and:</p>
+<p>Then, after Mariah corrected another part of his form, Austin said "you mean like this" and:</p>
 
 <ol>
-    <li>Grabbed the ring box from my pocket</li>
-    <li>Dropped my knee, cracking the clamshell</li>
-    <li>Said "will you marry me"</li>
+    <li>Grabbed the ring box from his pocket</li>
+    <li>Dropped to his knee, cracking the clamshell</li>
+    <li>Said "will you marry me?"</li>
 </ol>
 
 <p>
-    After her shock of being surprised subsided, she said "yes"! Then we gushed over each other and
+    After her shock of being surprised subsided, she said "yes"! Then we hugged each other and
     talked about how much we loved one another. Afterward, we were off getting breakfast, like we
     will be doing for a long time.
 </p>
@@ -190,12 +196,5 @@ spoil them. Both of these little girls certainly do alot to make our house into 
 
     .miso {
         flex-direction: row-reverse;
-
-        & p {
-            flex: 1 1 300px;
-        }
-        & img {
-            flex: 0 1 300px;
-        }
     }
 </style>
