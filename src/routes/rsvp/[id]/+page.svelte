@@ -10,6 +10,8 @@
     let party = $state(untrack(() => data.party));
     let guests = $state(untrack(() => data.guests));
 
+    let submitting = $state(false);
+
     const refresh = () => {
         party = structuredClone(data.party);
         guests = structuredClone(data.guests);
@@ -20,7 +22,9 @@
 
 <h2>Party: {party.name}</h2>
 
-{#if form?.success}
+{#if submitting}
+    <p>Submitting...</p>
+{:else if form?.success}
     <p>Successfully submitted</p>
 {:else if form?.message}
     <p>ERROR: {form.message}</p>
@@ -59,9 +63,11 @@
     <form
         method="POST"
         use:enhance={() => {
+            submitting = true;
             return async ({ update }) => {
                 await update({ reset: false });
                 refresh();
+                submitting = false;
             };
         }}
     >
@@ -113,7 +119,7 @@
             </label>
         </div>
         <div>
-            <button type="submit"> Submit </button>
+            <button type="submit" disabled={submitting}> Submit </button>
             <button type="button" onclick={refresh}> Clear </button>
         </div>
     </form>

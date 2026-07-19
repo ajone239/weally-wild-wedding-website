@@ -7,8 +7,15 @@ export const actions: Actions = {
     default: async ({ request }) => {
         const data = await request.formData();
 
-        const first = data.get('firstName')?.toString() ?? '';
-        const last = data.get('lastName')?.toString() ?? '';
+        const first = data.get('firstName')?.toString().trim() ?? '';
+        const last = data.get('lastName')?.toString().trim() ?? '';
+
+        if (!first || !last) {
+            return fail(400, {
+                message: 'Input for first and last name is required.'
+            });
+        }
+
         const f = '%' + first + '%';
         const l = '%' + last + '%';
         const fal = '%' + first + '%' + last + '%';

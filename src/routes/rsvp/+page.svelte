@@ -2,33 +2,39 @@
     import { enhance } from '$app/forms';
     import Seo from '$lib/components/Seo.svelte';
     let { form } = $props();
+    let submitting = $state(false);
 </script>
 
 <Seo title="RSVP" description="RSVP for Austin and Mariah's wedding." />
-
-{#if form?.success}
-    <p>Successfully submitted</p>
-{/if}
 
 <h2>Find your party:</h2>
 
 <p>Please enter the first and last name of one of the members of your party.</p>
 
-<form method="POST" use:enhance>
+<form
+    method="POST"
+    use:enhance={() => {
+        submitting = true;
+        return async ({ update }) => {
+            await update({ reset: false });
+            submitting = false;
+        };
+    }}
+>
     <div>
         <label>
-            First:
-            <input type="text" required name="firstName" />
+            <input placeholder="First Name" type="text" required name="firstName" />
         </label>
         <label>
-            Last:
-            <input type="text" required name="lastName" />
+            <input placeholder="Last Name" type="text" required name="lastName" />
         </label>
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" disabled={submitting}>Submit</button>
 </form>
 
-{#if form?.parties}
+{#if submitting}
+    <p>Searching...</p>
+{:else if form?.parties}
     <h2>Select your Party:</h2>
 
     {#each form?.parties as partay (partay.id)}
