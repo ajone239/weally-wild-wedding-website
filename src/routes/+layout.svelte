@@ -13,8 +13,7 @@
         { title: 'RSVP', url: '/rsvp' },
         { title: 'FAQ', url: '/faq' },
         { title: 'About', url: '/about' },
-        { title: 'Registry', url: '/registry' },
-        dev && { title: 'Demo', url: '/demo' }
+        { title: 'Registry', url: '/registry' }
     ].filter((m) => m) as MenuLink[];
 </script>
 

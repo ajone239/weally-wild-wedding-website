@@ -1,6 +1,14 @@
 <script>
     import stare from '$lib/assets/cute_stare.jpg';
     import unionPickup from '$lib/assets/union_pickup.jpg';
+
+    import jump from '$lib/assets/jump.jpg';
+    import silly from '$lib/assets/silly.jpg';
+    import laugh from '$lib/assets/laugh.jpg';
+    import walk from '$lib/assets/walk.jpg';
+    import piggy_back from '$lib/assets/piggy_back.jpg';
+    import bw_kissy from '$lib/assets/bw_kissy.jpg';
+
     import Seo from '$lib/components/Seo.svelte';
     let { data } = $props();
 </script>
@@ -13,9 +21,33 @@
 </div>
 
 <div class="info-card">
-    <h3>General Info:</h3>
+    <h2>General Info:</h2>
     <div><b>When:</b> {data.date}</div>
     <div><b>Where:</b> {data.place}</div>
+</div>
+
+<div class="photos-section">
+    <h2>The Bride and Groom:</h2>
+
+    <div class="photos">
+        <div class="walk-silly">
+            <img src={walk} alt="The bride and groom cross the street symbollically." />
+
+            <div class="silly-laugh">
+                <img src={silly} alt="The groom is silly." />
+                <img src={laugh} alt="The bride laughs." />
+            </div>
+        </div>
+
+        <div class="bw-kissy">
+            <img src={bw_kissy} alt="The bride and groom kiss in black and white." />
+        </div>
+
+        <div class="sit-jump">
+            <img src={piggy_back} alt="The groom piggy backs the bride." />
+            <img src={jump} alt="The bride and groom leap in excitement." />
+        </div>
+    </div>
 </div>
 
 <style>
@@ -47,5 +79,59 @@
     .info-card div {
         margin: 5px;
         margin-top: 15px;
+    }
+
+    .photos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & img {
+            max-width: 100%;
+            margin: 35px;
+            width: 350px;
+            height: auto;
+            display: block;
+        }
+
+        & .walk-silly {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            & .silly-laugh {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+
+        & .bw-kissy img {
+            width: 400px;
+        }
+
+        & .sit-jump {
+            & img {
+                width: 300px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 700px) {
+            & .bw-kissy img {
+                width: 500px;
+            }
+            & .sit-jump,
+            & .walk-silly {
+                flex-direction: row;
+                align-items: stretch;
+            }
+        }
     }
 </style>
