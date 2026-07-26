@@ -43,7 +43,7 @@
             <img src={bw_kissy} alt="The bride and groom kiss in black and white." />
         </div>
 
-        <div class="sit-jump">
+        <div class="pig-jump">
             <img src={piggy_back} alt="The groom piggy backs the bride." />
             <img src={jump} alt="The bride and groom leap in excitement." />
         </div>
@@ -94,10 +94,15 @@
             display: block;
         }
 
-        & .walk-silly {
+        & .walk-silly,
+        & .bw-kissy,
+        & .pig-jump {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+
+        & .walk-silly {
             gap: 10px;
 
             & .silly-laugh {
@@ -109,25 +114,15 @@
             }
         }
 
-        & .bw-kissy img {
-            width: 400px;
-        }
-
-        & .sit-jump {
-            & img {
-                width: 300px;
-            }
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        & .pig-jump img {
+            width: 300px;
         }
 
         @media (min-width: 700px) {
             & .bw-kissy img {
                 width: 500px;
             }
-            & .sit-jump,
+            & .pig-jump,
             & .walk-silly {
                 flex-direction: row;
                 align-items: stretch;
