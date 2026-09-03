@@ -26,7 +26,7 @@
 <h2>When do I show up?</h2>
 
 <p>
-    Our ceremony will start at 3:00 p.m. EST on Nov. 14, 2027. We ask that guests get to the venue
+    Our ceremony will start at 3:00 p.m. EST on Nov. 14, 2026. We ask that guests get to the venue
     15 minutes early to ease of seating.
 </p>
 
