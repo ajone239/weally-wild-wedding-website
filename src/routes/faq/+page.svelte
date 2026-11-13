@@ -40,6 +40,10 @@
 <h2>Dress Code: Garden Casual</h2>
 
 <p>
+    <b>NOTE:</b> The ceremony will be <em>outside</em> . Please dress warm as the weather will be chilly.
+</p>
+
+<p>
     The inpiration below should serve as direction and is not mandatory. However, please do refrain
     from wearing white :).
 </p>

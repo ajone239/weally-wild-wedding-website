@@ -22,6 +22,14 @@
 
 <div class="info-card">
     <h2>General Info:</h2>
+
+    <div>
+        <p>
+            <b>NOTE:</b> The ceremony will be <em>outside</em> . Please dress warm as the weather will
+            be chilly.
+        </p>
+    </div>
+
     <div><b>When:</b> {data.date}</div>
     <div><b>Where:</b> {data.place}</div>
 </div>
